@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Sorts Mill Goudy', serif;
+  color: black;
+}
+
+h2 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+  margin: 10px 0;
+  color: #222;
+  &:visited {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+p {
+  margin: 10px 0;
+  color: #222;
+}
+
+#content {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.navigation {
+  background: transparent url(header_background.png) center no-repeat;
+  width: 1280px;
+  height: 137px;
+  position: fixed;
+  top: 0;
+  ul {
+    margin-left: 460px;
+    margin-top: 5px;
+  }
+  li {
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+  }
+  h1 {
+    margin-top: 35px;
+    margin-left: 500px;
+  }
+}
+
+#home, #about, #work, #contact {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 125px;
+  min-height: 850px;
+}
+
+#about, #work, #contact {
+  padding-top: 200px;
+}
+
+#about {
+  height: 300px;
+}
+
+#work {
+  height: 3650px;
+}
+
+#contact {
+  min-height: 670px;
+}
+
+#home img {
+  display: block;
+  margin: 0 auto;
+  height: 600px;
+  width: 1278px;
+}
+
+#about_info {
+  width: 345px;
+  float: left;
+  padding: 0 40px;
+}
+
+#about_image {
+  width: 430px;
+  float: left;
+  div {
+    width: 402px;
+    margin: 30px auto;
+  }
+}
+
+#about_bio {
+  width: 345px;
+  padding: 0 40px;
+  float: left;
+  text-align: right;
+}
+
+.work_example {
+  clear: both;
+}
+
+.work_example_info {
+  width: 345px;
+  float: left;
+  padding: 0 40px;
+}
+
+.work_example_image {
+  width: 775px;
+  padding: 0 40px;
+  float: left;
+  text-align: right;
+  padding-bottom: 100px;
+  img {
+    width: 100%;
+  }
+}
+
+#cto_icon {
+  background: url(/assets/cto_and_director.jpg);
+  width: 123px;
+  height: 19px;
+}
+
+#design_and_devel_icon {
+  background: url(/assets/design_and_develop.jpg);
+  width: 133px;
+  height: 19px;
+}
+
+#iphone_api_icon {
+  background: url(/assets/iphone_api.jpg);
+  width: 87px;
+  height: 19px;
+}
+
+#contact_info {
+  width: 345px;
+  float: left;
+  padding: 0 40px;
+}
+
+#contact_image {
+  width: 775px;
+  padding: 0 40px;
+  float: left;
+  text-align: right;
+  margin-top: -75px;
+  img {
+    width: 100%;
+  }
+}
+
+#contact {
+  form {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    #name, #email {
+      width: 250px;
+      float: right;
+    }
+    #message {
+      width: 100%;
+      height: 100px;
+    }
+    #commit {
+      float: right;
+    }
+  }
+  #message_sent_note {
+    border: 1px solid black;
+    padding: 40px;
+    margin: 40px 0;
+    display: none;
+  }
+}

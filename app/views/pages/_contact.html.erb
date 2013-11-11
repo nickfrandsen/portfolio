@@ -1,0 +1,35 @@
+<div id="contact_info">
+	<h2>contact me</h2>
+	<p>I am currently available for contract work.</p>
+
+	<div id="message_sent_note"></div>
+	<%= form_tag send_enquiry_pages_path, :remote => true do %>
+
+	<div>
+	<%= label_tag "name" %>
+	<%= text_field_tag :name %>
+	</div>
+
+	<div>
+	<%= label_tag "email" %>
+	<%= text_field_tag :email %>
+	</div>
+
+	<div>
+	<%= text_area_tag :message %>
+	</div>
+
+	<%= submit_tag "send", :id => "commit" %>
+
+	<% end %>
+
+	<p>
+		<%= mail_to "nick.rowe.frandsen@gmail.com", "e. nick.rowe.frandsen@gmail.com" %><br />
+		<a href="http://github.com/nickfrandsen">g. github.com/nickfrandsen</a><br />
+		<a href="skype:nick.rowe.frandsen">s. nick.rowe.frandsen</a><br />
+	</p>
+</div>
+
+<div id="contact_image">
+	<img src="/assets/contact_us_postbox.jpg" alt="cool postbox" />
+</div>
